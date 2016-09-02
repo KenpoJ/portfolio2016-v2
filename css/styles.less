@@ -1,5 +1,7 @@
 /*----- VARIABLES -----*/
-
+@displayText: 'Luckiest Guy', sans-serif;
+@bodyHeading: 'Oswald', sans-serif;
+@bodyText: 'merriweather', sans-serif;
 
 
 /*----- MIXINS -----*/
@@ -8,11 +10,21 @@
 
 /*----- FONTS -----*/
 body {
+	font-family: @bodyText;
 	font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @bodyHeading;
 }
 
 
 /*----- LAYOUT -----*/
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 header {
 	height: 500px;
 	overflow: auto;
@@ -41,12 +53,37 @@ header {
 	}
 }
 .billboard {
-	.img-thumbnail {
-		margin: 0 0 0 10rem;
-		padding: 7px;
-		.rotate(-8deg);
-		.drop-shadow(4px, 4px, 5px, 0, 0.75);
+	position: relative;
+
+	h2 {
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-family: @displayText;
+		font-size: 5rem;
+		color: #FFF;
+		.translate (-50%, 45%);
+		.text-shadow ();
 	}
+}
+.img-thumbnail.img-polaroid {
+	padding: 7px;
+	.drop-shadow(4px, 4px, 5px, 0, 0.75);
+
+	&.rotate-left-eight {
+		margin: 0 0 0 10rem;
+		.rotate(-8deg);
+	}
+	&.rotate-right-eight {
+		margin: 0 0 0 5rem;
+		.rotate(8deg);
+	}
+}
+
+section {
+	padding: 5rem 0;
+	border-bottom: 1px solid #333;
 }
 
 
@@ -72,6 +109,99 @@ nav {
 		}
 	}
 }
+
+/*----- SPECIFIC STYLES -----*/
+#skills {
+	padding: 5rem 0;
+}
+.skill {
+	margin-bottom: 3rem;
+	text-align: center;
+
+	.rating {
+		margin-bottom: .5em;
+	}
+}
+.skill-rating {
+	margin: 0 auto .5em;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 4px solid #777;
+	background: #BBB;
+	background-image: linear-gradient(to right, transparent 50%, #006 0);
+
+	&:before {
+		content: '';
+		display: block;
+		margin-left: 50%;
+		height: 100%;
+		border-radius: 0 100% 100% 0 / 50%;
+		transform-origin: left;
+	}
+	&.ten-percent {
+		&:before {
+			background-color: inherit;
+			.rotate(.1turn);
+		}
+	}
+	&.twenty-percent {
+		&:before {
+			background-color: inherit;
+			.rotate(.2turn);
+		}
+	}
+	&.thirty-percent {
+		&:before {
+			background-color: inherit;
+			.rotate(.3turn);
+		}
+	}
+	&.forty-percent {
+		&:before {
+			background-color: inherit;
+			.rotate(.4turn);
+		}
+	}
+	&.fifty-percent {
+		&:before {
+			background-color: inherit;
+			.rotate(.5turn);
+		}
+	}
+	&.sixty-percent {
+		&:before {
+			background-color: #006;
+			.rotate(.1turn);
+		}
+	}
+	&.seventy-percent {
+		&:before {
+			background-color: #006;
+			.rotate(.2turn);
+		}
+	}
+	&.eighty-percent {
+		&:before {
+			background-color: #006;
+			.rotate(.3turn);
+		}
+	}
+	&.ninety-percent {
+		&:before {
+			background-color: #006;
+			.rotate(.4turn);
+		}
+	}
+	&.hundred-percent {
+		&:before {
+			background-color: #006;
+			.rotate(.5turn);
+		}
+	}
+}
+
 
 
 /*----- FORM HELPER STYLES -----*/

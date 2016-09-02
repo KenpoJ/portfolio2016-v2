@@ -1,3 +1,239 @@
 /*----- VARIABLES -----*/
-body{font-size:15px}header{height:500px;overflow:auto;background:url('../img/main-header-02.jpg') no-repeat top left}header h1{margin-top:0;margin-bottom:0;line-height:.75em}header .logo img{height:100px}.header-content{padding:1em 0 1em;background:rgba(255,255,255,.7);-webkit-box-shadow:0 3px 5px #333;-moz-box-shadow:0 3px 5px #333;box-shadow:0 3px 5px #333}.header-content .container{padding-left:0;padding-right:0}.billboard .img-thumbnail{margin:0 0 0 10rem;padding:7px;-webkit-transform:rotate(-8deg);-moz-transform:rotate(-8deg);-ms-transform:rotate(-8deg);-o-transform:rotate(-8deg);-webkit-box-shadow:4px 4px 5px 0 rgba(0,0,0,.75);-moz-box-shadow:4px 4px 5px 0 rgba(0,0,0,.75);box-shadow:4px 4px 5px 0 rgba(0,0,0,.75)}nav ul{list-style-type:none}nav ul li{float:left;margin:0;padding:0}nav ul li a{padding:.25em 3em;display:block;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;-webkit-transition:all .2s ease-out;-moz-transition:all .2s ease-out;-ms-transition:all .2s ease-out;-o-transition:all .2s ease-out}nav ul li a:hover{background:rgba(230,230,230,.7);text-decoration:none}.pull-right{margin-left:1em}.pull-left{margin-right:1em}
+/*----- VARIABLES -----*/
+/*----- MIXINS -----*/
+/*----- FONTS -----*/
+body {
+  font-family: 'merriweather', sans-serif;
+  font-size: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+}
+/*----- LAYOUT -----*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header {
+  height: 500px;
+  overflow: auto;
+  background: url('../img/main-header-02.jpg') no-repeat top left;
+}
+header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75em;
+}
+header .logo img {
+  height: 100px;
+}
+.header-content {
+  padding: 1em 0 1em;
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0 3px 5px #333333;
+  -moz-box-shadow: 0 3px 5px #333333;
+  box-shadow: 0 3px 5px #333333;
+}
+.header-content .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.billboard {
+  position: relative;
+}
+.billboard h2 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 5rem;
+  color: #FFF;
+  -webkit-transform: translate(-50%, 45%);
+  -moz-transform: translate(-50%, 45%);
+  -ms-transform: translate(-50%, 45%);
+  -o-transform: translate(-50%, 45%);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+.img-thumbnail.img-polaroid {
+  padding: 7px;
+  -webkit-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.75);
+}
+.img-thumbnail.img-polaroid.rotate-left-eight {
+  margin: 0 0 0 10rem;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.img-thumbnail.img-polaroid.rotate-right-eight {
+  margin: 0 0 0 5rem;
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  transform: rotate(8deg);
+}
+section {
+  padding: 5rem 0;
+  border-bottom: 1px solid #333;
+}
+/*----- NAVIGATION -----*/
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  padding: .25em 3em;
+  display: block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+}
+nav ul li a:hover {
+  background: rgba(230, 230, 230, 0.7);
+  text-decoration: none;
+}
+/*----- SPECIFIC STYLES -----*/
+#skills {
+  padding: 5rem 0;
+}
+.skill {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.skill .rating {
+  margin-bottom: .5em;
+}
+.skill-rating {
+  margin: 0 auto .5em;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid #777;
+  background: #BBB;
+  background-image: linear-gradient(to right, transparent 50%, #000066 0);
+}
+.skill-rating:before {
+  content: '';
+  display: block;
+  margin-left: 50%;
+  height: 100%;
+  border-radius: 0 100% 100% 0%;
+  transform-origin: left;
+}
+.skill-rating.ten-percent:before {
+  background-color: inherit;
+  -webkit-transform: rotate(0.1turn);
+  -moz-transform: rotate(0.1turn);
+  -ms-transform: rotate(0.1turn);
+  -o-transform: rotate(0.1turn);
+  transform: rotate(0.1turn);
+}
+.skill-rating.twenty-percent:before {
+  background-color: inherit;
+  -webkit-transform: rotate(0.2turn);
+  -moz-transform: rotate(0.2turn);
+  -ms-transform: rotate(0.2turn);
+  -o-transform: rotate(0.2turn);
+  transform: rotate(0.2turn);
+}
+.skill-rating.thirty-percent:before {
+  background-color: inherit;
+  -webkit-transform: rotate(0.3turn);
+  -moz-transform: rotate(0.3turn);
+  -ms-transform: rotate(0.3turn);
+  -o-transform: rotate(0.3turn);
+  transform: rotate(0.3turn);
+}
+.skill-rating.forty-percent:before {
+  background-color: inherit;
+  -webkit-transform: rotate(0.4turn);
+  -moz-transform: rotate(0.4turn);
+  -ms-transform: rotate(0.4turn);
+  -o-transform: rotate(0.4turn);
+  transform: rotate(0.4turn);
+}
+.skill-rating.fifty-percent:before {
+  background-color: inherit;
+  -webkit-transform: rotate(0.5turn);
+  -moz-transform: rotate(0.5turn);
+  -ms-transform: rotate(0.5turn);
+  -o-transform: rotate(0.5turn);
+  transform: rotate(0.5turn);
+}
+.skill-rating.sixty-percent:before {
+  background-color: #006;
+  -webkit-transform: rotate(0.1turn);
+  -moz-transform: rotate(0.1turn);
+  -ms-transform: rotate(0.1turn);
+  -o-transform: rotate(0.1turn);
+  transform: rotate(0.1turn);
+}
+.skill-rating.seventy-percent:before {
+  background-color: #006;
+  -webkit-transform: rotate(0.2turn);
+  -moz-transform: rotate(0.2turn);
+  -ms-transform: rotate(0.2turn);
+  -o-transform: rotate(0.2turn);
+  transform: rotate(0.2turn);
+}
+.skill-rating.eighty-percent:before {
+  background-color: #006;
+  -webkit-transform: rotate(0.3turn);
+  -moz-transform: rotate(0.3turn);
+  -ms-transform: rotate(0.3turn);
+  -o-transform: rotate(0.3turn);
+  transform: rotate(0.3turn);
+}
+.skill-rating.ninety-percent:before {
+  background-color: #006;
+  -webkit-transform: rotate(0.4turn);
+  -moz-transform: rotate(0.4turn);
+  -ms-transform: rotate(0.4turn);
+  -o-transform: rotate(0.4turn);
+  transform: rotate(0.4turn);
+}
+.skill-rating.hundred-percent:before {
+  background-color: #006;
+  -webkit-transform: rotate(0.5turn);
+  -moz-transform: rotate(0.5turn);
+  -ms-transform: rotate(0.5turn);
+  -o-transform: rotate(0.5turn);
+  transform: rotate(0.5turn);
+}
+/*----- FORM HELPER STYLES -----*/
+/*----- HELPER CLASSES ------*/
+.pull-right {
+  margin-left: 1em;
+}
+.pull-left {
+  margin-right: 1em;
+}
+/*----- RESPONSIVE ADJUSTMENTS -----*/
+@media only screen and (max-width: 480px) {
+  
+}
+
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
