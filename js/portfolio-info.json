@@ -1,0 +1,95 @@
+{
+	"portfolio": [
+		{
+			"id": 1,
+			"category": "web",
+			"title": "OSHA.gov Website",
+			"type": "Professional",
+			"view_it_link": "http://osha.gov",
+			"thumbnail_link": "http://placehold.it/120x120",
+			"img_link": "",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue libero eu ipsum lobortis pellentesque. Aenean gravida vehicula porttitor. Sed euismod viverra est vitae rutrum. Etiam sodales libero nec nunc tincidunt mollis. Donec sit amet elit eros. Nam nec porttitor leo. Donec ullamcorper facilisis ligula ac molestie. Phasellus sodales rhoncus mollis. Aenean laoreet feugiat velit, non finibus enim tristique a.",
+			"tools": [
+				"HTML",
+				"CSS",
+				"jQuery",
+				"Javascript",
+				"Bootstrap",
+				"AJAX",
+				"XML/XSL",
+				"Photoshop",
+				"Illustrator",
+				"JIRA"
+			]
+		},
+		{
+			"id": 2,
+			"category": "web",
+			"title": "Diamond School of Self Defense Website",
+			"type": "Professional",
+			"view_it_link": "http://blog.diamondschoolkenpo.com",
+			"thumbnail_link": "http://placehold.it/120x120",
+			"img_link": "",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue libero eu ipsum lobortis pellentesque. Aenean gravida vehicula porttitor. Sed euismod viverra est vitae rutrum. Etiam sodales libero nec nunc tincidunt mollis. Donec sit amet elit eros. Nam nec porttitor leo. Donec ullamcorper facilisis ligula ac molestie. Phasellus sodales rhoncus mollis. Aenean laoreet feugiat velit, non finibus enim tristique a.",
+			"tools": [
+				"HTML",
+				"CSS",
+				"jQuery",
+				"Javascript",
+				"Bootstrap",
+				"LESS",
+				"Photoshop",
+				"Illustrator",
+				"Bootstrap",
+				"Wordpress"
+			]
+		},
+		{
+			"id": 3,
+			"category": "web",
+			"title": "Chemical Database Search Application",
+			"type": "Professional",
+			"view_it_link": "http://osha.gov/chemicaldata",
+			"thumbnail_link": "http://placehold.it/120x120",
+			"img_link": "",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue libero eu ipsum lobortis pellentesque. Aenean gravida vehicula porttitor. Sed euismod viverra est vitae rutrum. Etiam sodales libero nec nunc tincidunt mollis. Donec sit amet elit eros. Nam nec porttitor leo. Donec ullamcorper facilisis ligula ac molestie. Phasellus sodales rhoncus mollis. Aenean laoreet feugiat velit, non finibus enim tristique a.",
+			"tools": [
+				"HTML",
+				"CSS",
+				"jQuery",
+				"XML/XSL"
+			]
+		},
+		{
+			"id": 4,
+			"category": "web",
+			"title": "Marvel Civil War Application",
+			"type": "Personal",
+			"view_it_link": "http://jason.lymannuthouse.com/angular/marvel",
+			"thumbnail_link": "http://placehold.it/120x120",
+			"img_link": "",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue libero eu ipsum lobortis pellentesque. Aenean gravida vehicula porttitor. Sed euismod viverra est vitae rutrum. Etiam sodales libero nec nunc tincidunt mollis. Donec sit amet elit eros. Nam nec porttitor leo. Donec ullamcorper facilisis ligula ac molestie. Phasellus sodales rhoncus mollis. Aenean laoreet feugiat velit, non finibus enim tristique a.",
+			"tools": [
+				"HTML",
+				"CSS",
+				"AngularJS",
+				"JSON"
+			]
+		},
+		{
+			"id": 5,
+			"category": "web",
+			"title": "Website Research Folio",
+			"type": "School",
+			"view_it_link": "http://jason.lymannuthouse.com/img/portfolio/web/Jupiter_Research.pdf",
+			"thumbnail_link": "http://placehold.it/120x120",
+			"img_link": "",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue libero eu ipsum lobortis pellentesque. Aenean gravida vehicula porttitor. Sed euismod viverra est vitae rutrum. Etiam sodales libero nec nunc tincidunt mollis. Donec sit amet elit eros. Nam nec porttitor leo. Donec ullamcorper facilisis ligula ac molestie. Phasellus sodales rhoncus mollis. Aenean laoreet feugiat velit, non finibus enim tristique a.",
+			"tools": [
+				"InDesign",
+				"Photoshop",
+				"UI/UX Methodologies"
+			]
+		}
+	]
+}

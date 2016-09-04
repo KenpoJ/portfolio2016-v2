@@ -1,10 +1,12 @@
 /*----- VARIABLES -----*/
 /*----- VARIABLES -----*/
+/* blue */
 /*----- MIXINS -----*/
 /*----- FONTS -----*/
 body {
   font-family: 'merriweather', sans-serif;
   font-size: 15px;
+  color: #3c413b;
 }
 h1,
 h2,
@@ -14,6 +16,19 @@ h5,
 h6 {
   font-family: 'Oswald', sans-serif;
 }
+h2 {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+h3 {
+  text-align: center;
+  color: #8e7861;
+}
+a {
+  color: #8e7861;
+}
+a:hover {
+  color: #5b452e;
+}
 /*----- LAYOUT -----*/
 .flex-container {
   display: flex;
@@ -21,7 +36,7 @@ h6 {
   justify-content: space-between;
 }
 header {
-  height: 500px;
+  min-height: 500px;
   overflow: auto;
   background: url('../img/main-header-02.jpg') no-repeat top left;
 }
@@ -76,7 +91,7 @@ header .logo img {
   transform: rotate(-8deg);
 }
 .img-thumbnail.img-polaroid.rotate-right-eight {
-  margin: 0 0 0 5rem;
+  margin: 0 0 0 2rem;
   -webkit-transform: rotate(8deg);
   -moz-transform: rotate(8deg);
   -ms-transform: rotate(8deg);
@@ -84,20 +99,19 @@ header .logo img {
   transform: rotate(8deg);
 }
 section {
-  padding: 5rem 0;
-  border-bottom: 1px solid #333;
+  padding: 8rem 0;
+  border-bottom: 1px dashed #333;
 }
 /*----- NAVIGATION -----*/
 nav ul {
   list-style-type: none;
 }
 nav ul li {
-  float: left;
   margin: 0;
   padding: 0;
 }
 nav ul li a {
-  padding: .25em 3em;
+  padding: .25em 1em;
   display: block;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -115,8 +129,12 @@ nav ul li a:hover {
   text-decoration: none;
 }
 /*----- SPECIFIC STYLES -----*/
-#skills {
-  padding: 5rem 0;
+#bio,
+#work-history {
+  background: url('../img/northwest_map.png') no-repeat top left;
+}
+#skills h3 {
+  clear: both;
 }
 .skill {
   margin-bottom: 3rem;
@@ -124,6 +142,12 @@ nav ul li a:hover {
 }
 .skill .rating {
   margin-bottom: .5em;
+  opacity: .5;
+}
+@keyframes spin {
+  to {
+    transform: rotate(0.5turn);
+  }
 }
 .skill-rating {
   margin: 0 auto .5em;
@@ -131,8 +155,8 @@ nav ul li a:hover {
   height: 50px;
   overflow: hidden;
   border-radius: 50%;
-  border: 4px solid #777;
-  background: #BBB;
+  border: 3px solid #777;
+  background: #cacdd8;
   background-image: linear-gradient(to right, transparent 50%, #000066 0);
 }
 .skill-rating:before {
@@ -184,7 +208,7 @@ nav ul li a:hover {
   transform: rotate(0.5turn);
 }
 .skill-rating.sixty-percent:before {
-  background-color: #006;
+  background-color: #000066;
   -webkit-transform: rotate(0.1turn);
   -moz-transform: rotate(0.1turn);
   -ms-transform: rotate(0.1turn);
@@ -192,7 +216,7 @@ nav ul li a:hover {
   transform: rotate(0.1turn);
 }
 .skill-rating.seventy-percent:before {
-  background-color: #006;
+  background-color: #000066;
   -webkit-transform: rotate(0.2turn);
   -moz-transform: rotate(0.2turn);
   -ms-transform: rotate(0.2turn);
@@ -200,7 +224,7 @@ nav ul li a:hover {
   transform: rotate(0.2turn);
 }
 .skill-rating.eighty-percent:before {
-  background-color: #006;
+  background-color: #000066;
   -webkit-transform: rotate(0.3turn);
   -moz-transform: rotate(0.3turn);
   -ms-transform: rotate(0.3turn);
@@ -208,7 +232,7 @@ nav ul li a:hover {
   transform: rotate(0.3turn);
 }
 .skill-rating.ninety-percent:before {
-  background-color: #006;
+  background-color: #000066;
   -webkit-transform: rotate(0.4turn);
   -moz-transform: rotate(0.4turn);
   -ms-transform: rotate(0.4turn);
@@ -216,12 +240,59 @@ nav ul li a:hover {
   transform: rotate(0.4turn);
 }
 .skill-rating.hundred-percent:before {
-  background-color: #006;
+  background-color: #000066;
   -webkit-transform: rotate(0.5turn);
   -moz-transform: rotate(0.5turn);
   -ms-transform: rotate(0.5turn);
   -o-transform: rotate(0.5turn);
   transform: rotate(0.5turn);
+}
+ul.lesser-skills {
+  margin: 3rem 0 3rem;
+  overflow: auto;
+  list-style-type: none;
+}
+ul.lesser-skills li {
+  float: left;
+  margin: 0 .25em .5em;
+  padding: .25em .5em;
+  display: block;
+  background: #cacdd8;
+  border: 1px solid #aaaaff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 1px 1px 3px 0px #8e7861;
+  -moz-box-shadow: 1px 1px 3px 0px #8e7861;
+  box-shadow: 1px 1px 3px 0px #8e7861;
+}
+.work-place {
+  margin-bottom: 3rem;
+  padding: .75em;
+  width: 48%;
+  border: 1px solid #8e7861;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.work-place h3 {
+  margin-bottom: 1rem;
+  padding-bottom: .5em;
+  border-bottom: 1px dashed #8e7861;
+}
+.work-place .location {
+  text-align: center;
+  font-size: 1.25rem;
+}
+.work-place ul {
+  padding-left: 1.2em;
 }
 /*----- FORM HELPER STYLES -----*/
 /*----- HELPER CLASSES ------*/
@@ -235,5 +306,3 @@ nav ul li a:hover {
 @media only screen and (max-width: 480px) {
   
 }
-
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
