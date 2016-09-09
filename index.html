@@ -9,8 +9,10 @@
 <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+<link rel="stylesheet" href="bower_components/hover/css/hover-min.css">
 <link rel="stylesheet" href="css/styles.css">
 
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -28,11 +30,11 @@
 			<div class="col-sm-7 text-right">
 				<nav>
 					<ul class="flex-container">
-						<li><a href="#">Bio</a></li>
-						<li><a href="#">Skills</a></li>
-						<li><a href="#">Work &amp; Education</a></li>
+						<li><a href="#bio">Bio</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#work">Work &amp; Education</a></li>
 						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -70,7 +72,7 @@
 		<h2>Skills</h2>
 		<h3>Core Competencies</h3>
 
-		<div class="flex-container">
+		<div class="flex-container col-sm-10 col-sm-offset-1">
 			<div class="skill">
 				<div class="rating">90%</div>
 				<div class="skill-rating ninety-percent"></div>
@@ -123,7 +125,7 @@
 			</div>
 		</div>
 		<h3>Proficient with Experience</h3>
-		<ul class="lesser-skills">
+		<ul class="lesser-skills col-sm-7 col-sm-offset-3">
 			<li>AJAX</li>
 			<li>XML/XSL</li>
 			<li>Search Engine Optimization</li>
@@ -137,7 +139,7 @@
 			<li>Acrobat</li>
 		</ul>
 		<h3>Novice with Some Experience</h3>
-		<ul class="lesser-skills">
+		<ul class="lesser-skills col-sm-7 col-sm-offset-3">
 			<li>AngularJS</li>
 			<li>JSON</li>
 			<li>NodeJS</li>
@@ -150,8 +152,8 @@
 			<li>Actionscript</li>
 		</ul>
 
-		<div class="col-sm-4 col-sm-offset-4 animate infinite pulse">
-			<a class="btn btn-primary" href="resumes/JasonLymanResume_2016v2.pdf" target="_blank">Download my FULL Resum&eacute;</a>
+		<div id="resume-btn-skills" class="resume-btn col-sm-4 col-sm-offset-4">
+			<a class="btn btn-primary btn-block" href="resumes/JasonLymanResume_2016v2.pdf" target="_blank">Download my FULL Resum&eacute;</a>
 		</div>
 	</div>
 </section>
@@ -236,6 +238,10 @@
 				</ul>
 			</div>
 		</div>
+
+		<div id="resume-btn-work" class="resume-btn col-sm-4 col-sm-offset-4">
+			<a class="btn btn-primary btn-block" href="resumes/JasonLymanResume_2016v2.pdf" target="_blank">Download my FULL Resum&eacute;</a>
+		</div>
 	</div>
 </section>
 
@@ -249,6 +255,8 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src=""></script>
+<script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="bower_components/waypoints/lib/shortcuts/inview.min.js"></script>
+<script src="js/waypoints.js"></script>
 </body>
 </html>

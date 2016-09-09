@@ -5,91 +5,176 @@
 			"category": "web",
 			"title": "OSHA.gov Website",
 			"type": "Professional",
-			"view_it_link": "http://osha.gov",
-			"thumbnail_link": "http://placehold.it/120x120",
-			"img_link": "",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue libero eu ipsum lobortis pellentesque. Aenean gravida vehicula porttitor. Sed euismod viverra est vitae rutrum. Etiam sodales libero nec nunc tincidunt mollis. Donec sit amet elit eros. Nam nec porttitor leo. Donec ullamcorper facilisis ligula ac molestie. Phasellus sodales rhoncus mollis. Aenean laoreet feugiat velit, non finibus enim tristique a.",
-			"tools": [
-				"HTML",
-				"CSS",
-				"jQuery",
-				"Javascript",
-				"Bootstrap",
-				"AJAX",
-				"XML/XSL",
-				"Photoshop",
-				"Illustrator",
-				"JIRA"
-			]
+			"page": "portfolio_pages/osha.html",
+			"thumbnail_link": "img/portfolio/web/osha_thumb.jpg"
 		},
 		{
 			"id": 2,
 			"category": "web",
 			"title": "Diamond School of Self Defense Website",
 			"type": "Professional",
-			"view_it_link": "http://blog.diamondschoolkenpo.com",
-			"thumbnail_link": "http://placehold.it/120x120",
-			"img_link": "",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue libero eu ipsum lobortis pellentesque. Aenean gravida vehicula porttitor. Sed euismod viverra est vitae rutrum. Etiam sodales libero nec nunc tincidunt mollis. Donec sit amet elit eros. Nam nec porttitor leo. Donec ullamcorper facilisis ligula ac molestie. Phasellus sodales rhoncus mollis. Aenean laoreet feugiat velit, non finibus enim tristique a.",
-			"tools": [
-				"HTML",
-				"CSS",
-				"jQuery",
-				"Javascript",
-				"Bootstrap",
-				"LESS",
-				"Photoshop",
-				"Illustrator",
-				"Bootstrap",
-				"Wordpress"
-			]
+			"page": "portfolio_pages/dssd.html",
+			"thumbnail_link": "img/portfolio/web/dssd_light_thumb.jpg"
 		},
 		{
 			"id": 3,
 			"category": "web",
 			"title": "Chemical Database Search Application",
 			"type": "Professional",
-			"view_it_link": "http://osha.gov/chemicaldata",
-			"thumbnail_link": "http://placehold.it/120x120",
-			"img_link": "",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue libero eu ipsum lobortis pellentesque. Aenean gravida vehicula porttitor. Sed euismod viverra est vitae rutrum. Etiam sodales libero nec nunc tincidunt mollis. Donec sit amet elit eros. Nam nec porttitor leo. Donec ullamcorper facilisis ligula ac molestie. Phasellus sodales rhoncus mollis. Aenean laoreet feugiat velit, non finibus enim tristique a.",
-			"tools": [
-				"HTML",
-				"CSS",
-				"jQuery",
-				"XML/XSL"
-			]
+			"page": "portfolio_pages/chem_data.html",
+			"thumbnail_link": "img/portfolio/web/chemdata_thumb.jpg"
 		},
 		{
 			"id": 4,
 			"category": "web",
 			"title": "Marvel Civil War Application",
 			"type": "Personal",
-			"view_it_link": "http://jason.lymannuthouse.com/angular/marvel",
-			"thumbnail_link": "http://placehold.it/120x120",
-			"img_link": "",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue libero eu ipsum lobortis pellentesque. Aenean gravida vehicula porttitor. Sed euismod viverra est vitae rutrum. Etiam sodales libero nec nunc tincidunt mollis. Donec sit amet elit eros. Nam nec porttitor leo. Donec ullamcorper facilisis ligula ac molestie. Phasellus sodales rhoncus mollis. Aenean laoreet feugiat velit, non finibus enim tristique a.",
-			"tools": [
-				"HTML",
-				"CSS",
-				"AngularJS",
-				"JSON"
-			]
+			"page": "portfolio_pages/angular_civil_war.html",
+			"thumbnail_link": "img/portfolio/web/angular_civil_war_thumb.jpg"
 		},
 		{
 			"id": 5,
 			"category": "web",
 			"title": "Website Research Folio",
 			"type": "School",
-			"view_it_link": "http://jason.lymannuthouse.com/img/portfolio/web/Jupiter_Research.pdf",
-			"thumbnail_link": "http://placehold.it/120x120",
-			"img_link": "",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue libero eu ipsum lobortis pellentesque. Aenean gravida vehicula porttitor. Sed euismod viverra est vitae rutrum. Etiam sodales libero nec nunc tincidunt mollis. Donec sit amet elit eros. Nam nec porttitor leo. Donec ullamcorper facilisis ligula ac molestie. Phasellus sodales rhoncus mollis. Aenean laoreet feugiat velit, non finibus enim tristique a.",
-			"tools": [
-				"InDesign",
-				"Photoshop",
-				"UI/UX Methodologies"
-			]
+			"page": "portfolio_pages/jupiter_research.html",
+			"thumbnail_link": "img/portfolio/web/jupiter_thumb.jpg"
+		},
+		{
+			"id": 6,
+			"category": "web",
+			"title": "Growth Principles Website",
+			"type": "Professional",
+			"page": "portfolio_pages/growth_principles.html",
+			"thumbnail_link": "img/portfolio/web/growthprinciples_thumb.jpg"
+		},
+		{
+			"id": 7,
+			"category": "web",
+			"title": "Mad Libs Application",
+			"type": "Personal",
+			"page": "portfolio_pages/mad_libs.html",
+			"thumbnail_link": "img/portfolio/web/kids_madlibs.svg"
+		},
+		{
+			"id": 8,
+			"category": "web",
+			"title": "Angular Application Tutorial",
+			"type": "Personal",
+			"page": "portfolio_pages/angular_phone.html",
+			"thumbnail_link": "img/portfolio/web/angular_phone_thumb.jpg"
+		},
+		{
+			"id": 9,
+			"category": "web",
+			"title": "Modus Webpage Exercise",
+			"type": "Personal",
+			"page": "portfolio_pages/modus.html",
+			"thumbnail_link": "img/portfolio/web/modus_versus_thumb.jpg"
+		},
+		{
+			"id": 10,
+			"category": "graphic",
+			"title": "Terminator: The Sarah Conner Chronicles Poster",
+			"type": "Personal",
+			"page": "portfolio_pages/terminator.html",
+			"thumbnail_link": "img/portfolio/graphic/terminator_thumb.jpg"
+		},
+		{
+			"id": 11,
+			"category": "graphic",
+			"title": "Presentation on Designer Veerle Pieters",
+			"type": "School",
+			"page": "portfolio_pages/veerle.html",
+			"thumbnail_link": "img/portfolio/graphic/veerle_pieters_thumb.jpg"
+		},
+		{
+			"id": 12,
+			"category": "graphic",
+			"title": "Prague Souvenir Designs",
+			"type": "School",
+			"page": "portfolio_pages/prague.html",
+			"thumbnail_link": "img/portfolio/graphic/prague_souveniers_final_thumb.jpg"
+		},
+		{
+			"id": 13,
+			"category": "graphic",
+			"title": "Trifold Brochure",
+			"type": "School",
+			"page": "portfolio_pages/trifold.html",
+			"thumbnail_link": "img/portfolio/graphic/sustainability_triFold_thumb.jpg"
+		},
+		{
+			"id": 14,
+			"category": "graphic",
+			"title": "Typography Text Cloud",
+			"type": "School",
+			"page": "portfolio_pages/text_cloud.html",
+			"thumbnail_link": "img/portfolio/graphic/typography_text_cloud_sq_thumb.jpg"
+		},
+		{
+			"id": 15,
+			"category": "motion",
+			"title": "Opening Sequence for Schoolhouse Scoops",
+			"type": "School",
+			"page": "portfolio_pages/school_scoops.html",
+			"thumbnail_link": "img/portfolio/motion/school_scoops_thumb.jpg"
+		},
+		{
+			"id": 16,
+			"category": "motion",
+			"title": "Self Promotion Video",
+			"type": "School",
+			"page": "portfolio_pages/self_promotion.html",
+			"thumbnail_link": "img/portfolio/motion/selfPromotion/selfPromotion.jpg"
+		},
+		{
+			"id": 17,
+			"category": "motion",
+			"title": "Store Commercial",
+			"type": "School",
+			"page": "portfolio_pages/commercial.html",
+			"thumbnail_link": "img/portfolio/motion/JLyman_commercial/JLyman_commercial.jpg"
+		},
+		{
+			"id": 18,
+			"category": "illustration",
+			"title": "Happy Face",
+			"type": "Personal",
+			"page": "portfolio_pages/happy_face.html",
+			"thumbnail_link": "img/portfolio/illustration/happy_face_thumb.jpg"
+		},
+		{
+			"id": 19,
+			"category": "illustration",
+			"title": "Lady in Red",
+			"type": "Personal",
+			"page": "portfolio_pages/lady_in_red.html",
+			"thumbnail_link": "img/portfolio/illustration/ladyInRed_sq_thumb.jpg"
+		},
+		{
+			"id": 20,
+			"category": "illustration",
+			"title": "MartialArts.com Marketing Material",
+			"type": "Professional",
+			"page": "portfolio_pages/martialarm.html",
+			"thumbnail_link": "img/portfolio/illustration/MartialArm_thumb.jpg"
+		},
+		{
+			"id": 20,
+			"category": "illustration",
+			"title": "Star Wars: The Phantom Menace Illustration",
+			"type": "Personal",
+			"page": "portfolio_pages/star_wars.html",
+			"thumbnail_link": "img/portfolio/illustration/Star-Wars-I_thumb.jpg"
+		},
+		{
+			"id": 21,
+			"category": "illustration",
+			"title": "Winged Woman",
+			"type": "Personal",
+			"page": "portfolio_pages/winged_woman.html",
+			"thumbnail_link": "img/portfolio/illustration/winged-woman_thumb.jpg"
 		}
 	]
 }
