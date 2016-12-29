@@ -20,42 +20,45 @@
 </head>
 <body>
 
+<div class="container">
+
 <header>
 	<div class="header-content">
 		<div class="container">
-			<div class="logo col-sm-5">
+			<div class="logo col-md-5">
 				<img class="pull-left" src="img/arrow_logo.svg">
 				<h1>Jason Lyman<br><small>Web Designer &amp; Front End Developer</small></h1>
 			</div>
-			<div class="col-sm-7 text-right">
+			<div class="nav col-md-7 text-right">
 				<nav>
 					<ul class="flex-container">
 						<li><a href="#bio">Bio</a></li>
 						<li><a href="#skills">Skills</a></li>
-						<li><a href="#work">Work &amp; Education</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="#work-history">Work &amp; Education</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<!--li><a href="#contact">Contact</a></li-->
 					</ul>
 				</nav>
 			</div>
 		</div>
 	</div>
-	<div class="billboard container">
-		<div class="portrait col-sm-6">
-			<img class="img-thumbnail img-polaroid rotate-left-eight" src="img/JLyman_02.jpg">
-		</div>
-		<div class="col-sm-6 text-center">
-			<h2>Hi!<br>My name is Jason<br>and I build websites!</h2>
-		</div>
-	</div>
 </header>
+
+<div class="billboard container">
+	<div class="portrait col-md-6">
+		<img class="img-thumbnail img-polaroid rotate-left-eight" src="img/JLyman_02.jpg">
+	</div>
+	<div class="col-md-6 text-center">
+		<h2>Hi!<br>My name is Jason<br>and I build websites!</h2>
+	</div>
+</div>
 
 <section id="bio">
 	<div class="container">
 		<h2>Introducing... ME!</h2>
 		<div class="col-sm-4">
-			<img class="img-thumbnail img-polaroid rotate-left-eight" src="http://placehold.it/200x200">
-			<img class="img-thumbnail img-polaroid rotate-right-eight" src="http://placehold.it/200x200">
+			<img class="img-thumbnail img-polaroid rotate-left-eight" src="img/utah_alpine_loop.jpg">
+			<img class="img-thumbnail img-polaroid rotate-right-eight" src="img/oregon_coast.jpg">
 		</div>
 		<div class="col-sm-8">
 			<p>Earning an Associates degree in Computer Graphics and Multimedia from Utah Career College started my career on the right foot. My first job was designing yellow page ads for directories published across the western United States. Some time afterwards, I returned to school to earn a Bachelors degree in Web Design and Interactive Media from the Art Institute of Salt Lake City. I also attended classes at Southern Utah University studying Illustration, as well as classes at Utah Valley University in their Digital Film program. My education has introduced me to a number of theories, methodologies and software programs that have become invaluable for progressing in my chosen career and taught me that learning is a lifelong pursuit.</p>
@@ -199,9 +202,9 @@
 				<h3>Front End Developer / Web Content Specialist</h3>
 				<p class="location">Valdez International Corp. / Dept. of Labor | 2011 - 2014</p>
 				<ul class="tasks">
-					<li></li>
-					<li></li>
-					<li></li>
+					<li>Created and implemented template built on Bootstrap for the OSHA.gov website</li>
+					<li>Trained other staff and developers on the Bootstrap methods</li>
+					<li>Created new pages with content from internal clients</li>
 				</ul>
 				<ul class="skills-used">
 					<li>HTML</li>
@@ -223,9 +226,8 @@
 				<h3>Website Manager</h3>
 				<p class="location">Matchbin (Radiate Media) | 2008 - 2011</p>
 				<ul class="tasks">
-					<li></li>
-					<li></li>
-					<li></li>
+					<li>Worked closely with clients across the US</li>
+					<li>Built websites for clients based on their needs and desires</li>
 				</ul>
 				<ul class="skills-used">
 					<li>HTML</li>
@@ -245,9 +247,256 @@
 	</div>
 </section>
 
+<section id="portfolio">
+	<div class="container">
+
+			<h2>Portfolio</h2>
+
+			<div class="flex-container">
+
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/osha.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/web/img_osha.jpg">
+					</a>
+					<h4>OSHA.gov Website</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/dssd.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/web/img_dssd_light.jpg">
+					</a>
+					<h4>Diamond School of Self Defense</h4>
+					<div class="overlay"></div>
+				</div>
+
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/chem_data.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/web/img_chemdata.jpg">
+					</a>
+					<h4>Chemical Database Search Application</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/angular_civil_war.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/web/img_angular_civil_war.jpg">
+					</a>
+					<h4>Marvel Civil War Angular Exercise</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/jupiter_research.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/web/jupiter-research.jpg">
+					</a>
+					<h4>Website Branding Research</h4>
+					<div class="overlay"></div>
+				</div>
+
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/indentifixUI.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/web/identifixUX-design-thumb.jpg">
+					</a>
+					<h4>Web Application Redesign</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/growth_principles.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/web/growthprinciples_both_thumb.jpg">
+					</a>
+					<h4>Growth Principles Website</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/mad_libs.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/web/kids_madlibs.svg">
+					</a>
+					<h4>Mad Libs 4 Fun</h4>
+					<div class="overlay"></div>
+				</div>
+
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/angular_phone.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/web/img_angular_phone.jpg">
+					</a>
+					<h4>Angular Tutorial</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/modus.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/web/img_modus_versus.jpg">
+					</a>
+					<h4>Modus Webpage Exercise</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/terminator.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/graphic/img_terminator.jpg">
+					</a>
+					<h4>Terminator: The Sarah Conner Chronicles Poster</h4>
+					<div class="overlay"></div>
+				</div>
+
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/veerle.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/graphic/img_veerle_pieters.jpg">
+					</a>
+					<h4>Presentation on Designer Veerle Pieters</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/prague.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/graphic/img_prague.jpg">
+					</a>
+					<h4>Souvenier Designs</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/pebbleCreekFlyer.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/graphic/2008PebbleCreekDr-Flyer-thumb.jpg">
+					</a>
+					<h4>Real Estate Flyer</h4>
+					<div class="overlay"></div>
+				</div>
+
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/trifold.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/graphic/img_trifold.jpg">
+					</a>
+					<h4>Trifold Brochure</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/text_cloud.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/graphic/typography_text_cloud_thumb.jpg">
+					</a>
+					<h4>Typography Text Cloud</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/school_scoops.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/motion/img_school_scoops.jpg">
+					</a>
+					<h4>Intro for Fictional School News Program</h4>
+					<div class="overlay"></div>
+				</div>
+
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/self_promotion.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/motion/img_self_promo.jpg">
+					</a>
+					<h4>Self Promotion Video</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/commercial.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/motion/img_commercial.jpg">
+					</a>
+					<h4>Commercial for Fictional Store</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/mateos-logo.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/graphic/MateosLogo_thumb.jpg">
+					</a>
+					<h4>Restaurant Logo</h4>
+					<div class="overlay"></div>
+				</div>
+
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/happy_face.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/illustration/img_happy_face.jpg">
+					</a>
+					<h4>Happy Face</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/lady_in_red.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/illustration/ladyInRed_thumb.jpg">
+					</a>
+					<h4>Lady In Red</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/martialarm.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/illustration/img_martial_arm.jpg">
+					</a>
+					<h4>MartialArm.com Marketing</h4>
+					<div class="overlay"></div>
+				</div>
+
+				<div class="portfolio-piece empty col-sm-4"></div>
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/star_wars.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/illustration/img_star_wars.jpg">
+					</a>
+					<h4>Star Wars: The Phantom Menace Illustration</h4>
+					<div class="overlay"></div>
+				</div>
+				<div class="portfolio-piece empty col-sm-4"></div>
+
+				<div class="portfolio-piece col-sm-4">
+					<a rel="portfolio_pages/winged_woman.html" data-toggle="modal" data-target="#portfolio_showing">
+						<img class="img-responsive" src="img/portfolio/illustration/img_winged_woman.jpg">
+					</a>
+					<h4>Winged Woman</h4>
+					<div class="overlay"></div>
+				</div>
+
+			</div>
+
+			<div id="resume-btn-portfolio" class="resume-btn col-sm-4 col-sm-offset-4">
+				<a class="btn btn-primary btn-block" href="resumes/JasonLymanResume_2016v2.pdf" target="_blank">Download my FULL Resum&eacute;</a>
+			</div>
+
+		</div>
+</section>
+
 <footer>
 
 </footer>
+
+</div>
+
+<div id="portfolio_showing" class="modal fade">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></a>
+				<h4></h4>
+			</div>
+			<div id="portfolio_display" class="modal-body"></div>
+			<div class="modal-footer"></div>
+		</div>
+	</div>
+</div>
 
 
 
@@ -257,6 +506,18 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
 <script src="bower_components/waypoints/lib/shortcuts/inview.min.js"></script>
+<script src="js/navigation.js"></script>
 <script src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/portfolio-script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12094163-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

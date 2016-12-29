@@ -49,9 +49,10 @@ a {
 	justify-content: space-between;
 }
 header {
-	min-height: 500px;
 	overflow: auto;
-	background: url('../img/main-header-02.jpg') no-repeat top left;
+	position: fixed;
+	z-index: 2;
+	.transition(all .2s ease-out);
 
 	h1 {
 		margin-top: 0; 
@@ -64,10 +65,36 @@ header {
 			height: 100px;
 		}
 	}
+
+	&.sticky {
+		max-height: 100px;
+		background: rgba(255, 255, 255, .5);
+
+		.logo {
+			width: 40%;
+			img {
+				display: none;
+			}
+			a {
+				color: @dark;
+				.transition(all .2s ease-out);
+
+				h1 {
+					margin-top: 1.2rem;
+					margin-left: 0;
+					font-size: 2rem;
+				}
+				&:hover {
+					text-decoration: none;
+					color: @dark + #597999;
+				}
+			}
+		}
+	}
 }
 .header-content {
 	padding: 1em 0 1em;
-	background: rgba(255, 255, 255, .7);
+	background: rgba(255, 255, 255, .8);
 	.box-shadow(0 3px 5px #333);
 
 	.container {
@@ -75,8 +102,12 @@ header {
 		padding-right: 0;
 	}
 }
+
 .billboard {
+	padding-top: 120px;
+	min-height: 500px;
 	position: relative;
+	background: url('../img/main-header-02.jpg') no-repeat top left;
 
 	h2 {
 		width: 100%;
@@ -281,23 +312,47 @@ ul {
 	}
 }
 
-.portfolio {
-	list-style-type: none;
-
-	li {
-		margin-right: 1rem;
-		margin-bottom: 2rem;
+.portfolio-piece {
+	padding-left: 0;
+	padding-right: 0;
+	position: relative;
+	overflow: hidden;
+	.transition(all 1s ease-out);
+	h4 {
+		padding: 0 1.5em;
+		position: absolute;
+		bottom: 5%;
+		right: 0;
+		z-index: 3;
+		font-size: 1.2rem;
+		text-align: right;
+		opacity: 0;
 	}
-	a {
-		display: block;
-		.drop-shadow(2px, 2px, 4px, 0, .25);
+	&:hover {
+		cursor: pointer;
+		h4 {
+			color: #FFF;
+			opacity: 1;
+		}
 	}
-	img {
-		width: 120px;
+	.overlay {
+		width: 100%;
+		height: 127px;
+		position: absolute;
+		top: 100%;
+		z-index: 2;
+		opacity: .85;
+		background: @dark;
+	}
+	&.empty {
+		background: @light;
 	}
 }
-.portfolio-piece {
-	.border-radius();
+
+.modal {
+	opacity: .2;
+	text-align: left;
+	background-color: @dark;
 }
 
 .resume-btn {
@@ -323,5 +378,129 @@ ul {
 /*----- RESPONSIVE ADJUSTMENTS -----*/
 
 @media only screen and (max-width: 480px) {
+	header {
+		width: 100%;
+		.logo {
+			width: 100%;
 
+			h1 {
+				font-size: 2.5rem;
+			}
+			img {
+				margin-top: -1.7rem;
+				width: 75px;
+			}
+		}
+		.nav {
+			clear: both;
+			font-size: 90%;
+			.flex-container {
+				margin-left: 0;
+				padding-left: 0;
+				justify-content: center;
+			}
+		}
+
+
+		&.sticky {
+			h1 {
+				margin-bottom: 1rem;
+				font-size: 2rem;
+				text-align: center;
+			}
+			.logo {
+				width: 100%;
+			}
+		}
+	}
+	.work-place {
+		margin-left: auto;
+		margin-right: auto;
+		width: 98%;
+	}
+	.billboard {
+		padding-top: 140px;
+		h2 {
+			font-size: 3rem;
+		}
+	}
+	.portrait {
+		.img-thumbnail.img-polaroid.rotate-left-eight {
+			margin-left: 0;
+			width: 175px;
+		}
+	}
 }
+@media only screen and (min-width: 481px) and (max-width: 801px) {
+	header {
+		width: 100%;
+		.logo {
+			width: 100%;
+
+			h1 {
+				font-size: 2.5rem;
+			}
+			img {
+				margin-top: -1.7rem;
+				width: 75px;
+			}
+		}
+		.nav {
+			clear: both;
+			font-size: 90%;
+			.flex-container {
+				margin-left: 0;
+				padding-left: 0;
+				justify-content: center;
+			}
+		}
+
+
+		&.sticky {
+			h1 {
+				margin-bottom: 1rem;
+				font-size: 2rem;
+				text-align: center;
+			}
+			.logo {
+				width: 100%;
+			}
+		}
+	}
+	.billboard {
+		.portrait {
+			float: left;
+			.img-thumbnail.img-polaroid.rotate-left-eight {
+				margin-left: 0;
+				width: 150px;
+			}
+		}
+		h2 {
+			top: 35%;
+		}
+	}
+	#bio {
+		.container {
+			.rotate-left-eight {
+				margin-left: 5rem;
+				width: 130px;
+			}
+			.rotate-right-eight {
+				margin-left: 0;
+				width: 130px;
+			}
+		}
+	}
+	#skills {
+		.flex-container {
+			justify-content: center;
+		}
+	}
+	.skill {
+		display: block;
+		width: 12rem;
+	}
+}
+
+
+

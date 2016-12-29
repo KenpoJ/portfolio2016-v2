@@ -1,9 +1,10 @@
 var firstResumeBtn = new Waypoint.Inview({
 	element: $('#resume-btn-skills'),
-	enter: function(direction) {
+	entered: function(direction) {
 		var t = this.element;
 		t.addClass('animated swing');
 	},
+	offset: '90%',
 	exit: function(direction) {
 		var t = this.element;
 		t.removeClass('animated swing');
@@ -11,10 +12,11 @@ var firstResumeBtn = new Waypoint.Inview({
 });
 var secondResumeBtn = new Waypoint.Inview({
 	element: $('#resume-btn-work'),
-	enter: function(direction) {
+	entered: function(direction) {
 		var t = this.element;
 		t.addClass('animated swing');
 	},
+	offset: '90%',
 	exit: function(direction) {
 		var t = this.element;
 		t.removeClass('animated swing');
@@ -22,10 +24,11 @@ var secondResumeBtn = new Waypoint.Inview({
 });
 var portfolioResumeBtn = new Waypoint.Inview({
 	element: $('#resume-btn-portfolio'),
-	enter: function(direction) {
+	entered: function(direction) {
 		var t = this.element;
 		t.addClass('animated swing');
 	},
+	offset: '95%',
 	exit: function(direction) {
 		var t = this.element;
 		t.removeClass('animated swing');
